@@ -1,0 +1,455 @@
+[
+  {
+    "claim_no": "CLM-20261015-001",
+    "customer_id": "C003",
+    "thread_id": null,
+    "created_at": "2026-10-15T10:20:00",
+    "status": "부지급",
+    "accident_summary": "주차장 통로에서 다른 차량과 접촉 (가상 샘플)",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 40,
+      "max": 60
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": {
+          "min": 200000,
+          "max": 900000
+        }
+      },
+      {
+        "coverage": "자차",
+        "covered": false,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261020-001",
+    "customer_id": "C002",
+    "thread_id": null,
+    "created_at": "2026-10-20T14:05:00",
+    "status": "지급완료",
+    "accident_summary": "신호 대기 중 뒤차에 추돌됨 (가상 샘플)",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 0,
+      "max": 10
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": {
+          "min": 450000,
+          "max": 1500000
+        }
+      },
+      {
+        "coverage": "자차",
+        "covered": false,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261101-001",
+    "customer_id": "C001",
+    "thread_id": null,
+    "created_at": "2026-11-01T09:30:00",
+    "status": "서류보완",
+    "accident_summary": "옆 차로 차량이 끼어들다 충돌 (가상 샘플)",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 20,
+      "max": 30
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": {
+          "min": 1050000,
+          "max": 4000000
+        }
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": {
+          "min": 100000,
+          "max": 1300000
+        }
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서",
+      "블랙박스 영상 또는 목격자 진술서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261101-002",
+    "customer_id": "C001",
+    "thread_id": null,
+    "created_at": "2026-11-01T16:45:00",
+    "status": "심사중",
+    "accident_summary": "신호 대기 중 뒤차에 추돌되어 목 부상 (가상 샘플)",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 0,
+      "max": 10
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": {
+          "min": 1350000,
+          "max": 5000000
+        }
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": {
+          "min": 0,
+          "max": 300000
+        }
+      },
+      {
+        "coverage": "대인",
+        "covered": true,
+        "amount": {
+          "min": 450000,
+          "max": 3000000
+        }
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서",
+      "진단서",
+      "치료비 영수증",
+      "교통사고 사실확인원"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-001",
+    "customer_id": "C001",
+    "thread_id": "t-5a2c5a0bbe5d",
+    "created_at": "2026-11-05T13:46:32",
+    "status": "접수",
+    "accident_summary": "주차장 접촉 / 11월5일 12시 / 집아래 주차장",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 40,
+      "max": 60
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": {
+          "min": 200000,
+          "max": 900000
+        }
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": {
+          "min": 0,
+          "max": 700000
+        }
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-002",
+    "customer_id": "C001",
+    "thread_id": "t-5c15bae7d4c6",
+    "created_at": "2026-11-05T14:24:47",
+    "status": "접수",
+    "accident_summary": "고객 차로변경 / 11월5일 12시 / 강남역 사거리",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 70,
+      "max": 80
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서",
+      "블랙박스 영상 또는 목격자 진술서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-003",
+    "customer_id": "C001",
+    "thread_id": "t-e5aa8c0471e5",
+    "created_at": "2026-11-05T14:29:47",
+    "status": "접수",
+    "accident_summary": "후미추돌 / 어제 오후 3시 / 강남역",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 0,
+      "max": 10
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-004",
+    "customer_id": "C001",
+    "thread_id": "t-acda7874bf0d",
+    "created_at": "2026-11-05T14:58:11",
+    "status": "접수",
+    "accident_summary": "후미추돌 / 어제 오후 3시 / 강남역",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 0,
+      "max": 10
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-005",
+    "customer_id": "C001",
+    "thread_id": "t-8dda4c592cbf",
+    "created_at": "2026-11-05T15:10:20",
+    "status": "접수",
+    "accident_summary": "주차 차량 접촉 / 11월5일 12시 / 집아래 주차장",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 100,
+      "max": 100
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": false,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-006",
+    "customer_id": "C001",
+    "thread_id": "t-19d1639b98b9",
+    "created_at": "2026-11-05T15:11:17",
+    "status": "접수",
+    "accident_summary": "주차 차량 접촉 / 11월5일 12시 / 집아래 주차장",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 90,
+      "max": 100
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-007",
+    "customer_id": "C001",
+    "thread_id": "t-01ba9048bc9d",
+    "created_at": "2026-11-05T15:16:59",
+    "status": "접수",
+    "accident_summary": "동시 차로변경 / 11월5일 12시 / 강남역 사거리",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 40,
+      "max": 70
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서"
+    ]
+  },
+  {
+    "claim_no": "CLM-20261105-008",
+    "customer_id": "C001",
+    "thread_id": "t-c68fad4c5b14",
+    "created_at": "2026-11-05T15:21:27",
+    "status": "접수",
+    "accident_summary": "고객 차로변경 / 어제 오후 1시 / 강남역",
+    "missing_fields": [],
+    "customer_fault": {
+      "min": 50,
+      "max": 80
+    },
+    "coverages": [
+      {
+        "coverage": "대물",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "자차",
+        "covered": true,
+        "amount": null
+      },
+      {
+        "coverage": "대인",
+        "covered": false,
+        "amount": null
+      }
+    ],
+    "documents": [
+      "사고 경위서",
+      "사고 현장·차량 파손 사진",
+      "차량 수리 견적서",
+      "블랙박스 영상 또는 목격자 진술서"
+    ]
+  }
+]

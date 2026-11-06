@@ -1,0 +1,10 @@
+[
+  {"id": "DOC-01", "name": "사고 경위서", "always": true},
+  {"id": "DOC-02", "name": "사고 현장·차량 파손 사진", "always": true},
+  {"id": "DOC-03", "name": "차량 수리 견적서", "always": true},
+  {"id": "DOC-04", "name": "진단서", "when_injury": true},
+  {"id": "DOC-05", "name": "치료비 영수증", "when_injury": true},
+  {"id": "DOC-06", "name": "블랙박스 영상 또는 목격자 진술서",
+   "fault_table_ids": ["FT-02", "FT-03", "FT-04", "FT-05", "FT-06", "FT-07"]},
+  {"id": "DOC-07", "name": "교통사고 사실확인원", "when_injury": true}
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "C001",
+    "name": "김가상",
+    "plan": "종합 가입 (대인·대물·자차)",
+    "coverages": {
+      "대인": {"joined": true, "limit": null, "deductible": 0},
+      "대물": {"joined": true, "limit": 200000000, "deductible": 0},
+      "자차": {"joined": true, "limit": 30000000, "deductible": 200000}
+    },
+    "riders": []
+  },
+  {
+    "id": "C002",
+    "name": "이예시",
+    "plan": "의무보험만 가입 (대인·대물 최소 한도, 자차 없음)",
+    "coverages": {
+      "대인": {"joined": true, "limit": 150000000, "deductible": 0},
+      "대물": {"joined": true, "limit": 20000000, "deductible": 0},
+      "자차": {"joined": false, "limit": null, "deductible": 0}
+    },
+    "riders": []
+  },
+  {
+    "id": "C003",
+    "name": "박샘플",
+    "plan": "자차 없음 + 대차비용 지원 특약",
+    "coverages": {
+      "대인": {"joined": true, "limit": null, "deductible": 0},
+      "대물": {"joined": true, "limit": 300000000, "deductible": 0},
+      "자차": {"joined": false, "limit": null, "deductible": 0}
+    },
+    "riders": ["SP-01"]
+  }
+]

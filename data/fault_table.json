@@ -1,0 +1,127 @@
+[
+  {
+    "id": "FT-01", "accident_type": "후미추돌", "customer_role": "피해",
+    "aliases": ["뒤에서 들이받음", "신호 대기 중 추돌", "정차 중 추돌", "후방 추돌"],
+    "description": "신호 대기 등으로 정차해 있던 고객 차량을 뒤차가 들이받은 경우",
+    "customer_fault": {"min": 0, "max": 10},
+    "modifiers": [
+      {"id": "FT-01-M1", "description": "고객 차량이 이유 없이 급정거한 경우", "bound": "max", "adjustment": 10},
+      {"id": "FT-01-M2", "description": "상대 차량이 과속한 경우", "bound": "max", "adjustment": -10}
+    ]
+  },
+  {
+    "id": "FT-02", "accident_type": "상대 신호위반", "customer_role": "피해",
+    "aliases": ["신호위반", "빨간불 진입", "적색 신호 진입"],
+    "description": "고객 차량이 녹색 신호에 직진하던 중, 적색 신호에 진입한 상대 차량과 충돌한 경우",
+    "customer_fault": {"min": 0, "max": 10},
+    "modifiers": [
+      {"id": "FT-02-M1", "description": "고객 차량이 과속한 경우", "bound": "max", "adjustment": 10},
+      {"id": "FT-02-M2", "description": "고객이 전방 주시를 소홀히 한 경우", "bound": "min", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-03", "accident_type": "상대 차로변경", "customer_role": "피해",
+    "aliases": ["끼어들기", "옆차가 끼어듦", "상대 차선 변경"],
+    "description": "고객 차량이 직진하던 중, 옆 차로의 상대 차량이 차로를 바꾸다 충돌한 경우",
+    "customer_fault": {"min": 20, "max": 30},
+    "modifiers": [
+      {"id": "FT-03-M1", "description": "상대 차량이 방향지시등을 켜지 않은 경우", "bound": "min", "adjustment": -10},
+      {"id": "FT-03-M2", "description": "고객 차량이 과속한 경우", "bound": "max", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-04", "accident_type": "고객 차로변경", "customer_role": "가해",
+    "aliases": ["내가 차선 변경", "차로 변경 중 접촉", "고객 차선 변경"],
+    "description": "고객 차량이 차로를 바꾸던 중, 그 차로를 직진하던 상대 차량과 충돌한 경우",
+    "customer_fault": {"min": 70, "max": 80},
+    "modifiers": [
+      {"id": "FT-04-M1", "description": "고객 차량이 방향지시등을 미리 켠 경우", "bound": "max", "adjustment": -10},
+      {"id": "FT-04-M2", "description": "상대 차량이 과속한 경우", "bound": "min", "adjustment": -10}
+    ]
+  },
+  {
+    "id": "FT-05", "accident_type": "비보호 좌회전", "customer_role": "가해",
+    "aliases": ["비보호 좌회전 중 충돌", "좌회전 중 직진차와 충돌"],
+    "description": "고객 차량이 비보호 좌회전하던 중, 맞은편에서 직진하던 상대 차량과 충돌한 경우",
+    "customer_fault": {"min": 70, "max": 80},
+    "modifiers": [
+      {"id": "FT-05-M1", "description": "상대 차량이 과속한 경우", "bound": "min", "adjustment": -10},
+      {"id": "FT-05-M2", "description": "고객 차량이 서행하지 않은 경우", "bound": "max", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-06", "accident_type": "상대 중앙선 침범", "customer_role": "피해",
+    "aliases": ["중앙선 침범", "역주행 차량과 충돌"],
+    "description": "상대 차량이 중앙선을 넘어와 고객 차량과 충돌한 경우",
+    "customer_fault": {"min": 0, "max": 10},
+    "modifiers": [
+      {"id": "FT-06-M1", "description": "고객 차량이 과속한 경우", "bound": "max", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-07", "accident_type": "신호 없는 교차로", "customer_role": "쌍방",
+    "aliases": ["교차로 동시 진입", "신호등 없는 교차로", "교차로 충돌"],
+    "description": "신호등이 없는 교차로에 고객 차량과 상대 차량이 거의 동시에 진입해 충돌한 경우",
+    "customer_fault": {"min": 40, "max": 60},
+    "modifiers": [
+      {"id": "FT-07-M1", "description": "고객 차량이 상대의 오른쪽에서 진입한 경우", "bound": "min", "adjustment": -10},
+      {"id": "FT-07-M2", "description": "고객 차량이 좁은 길에서 넓은 길로 진입한 경우", "bound": "max", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-08", "accident_type": "주차장 접촉", "customer_role": "쌍방",
+    "aliases": ["주차장 통로 접촉", "주차장 통로 충돌", "주차장에서 서로 움직이다 접촉"],
+    "description": "주차장 통로에서 고객 차량과 상대 차량이 둘 다 움직이던 중 접촉한 경우 (상대 차량이 주차돼 서 있었으면 해당하지 않음)",
+    "customer_fault": {"min": 40, "max": 60},
+    "modifiers": [
+      {"id": "FT-08-M1", "description": "고객 차량이 주차 구획에서 나오던 중인 경우", "bound": "max", "adjustment": 10},
+      {"id": "FT-08-M2", "description": "상대 차량이 통로를 역방향으로 이동한 경우", "bound": "min", "adjustment": -10}
+    ]
+  },
+  {
+    "id": "FT-09", "accident_type": "고객 후진 중 접촉", "customer_role": "가해",
+    "aliases": ["후진하다 부딪힘", "후진 중 충돌"],
+    "description": "고객 차량이 후진하던 중, 뒤에 있던 상대 차량과 접촉한 경우",
+    "customer_fault": {"min": 80, "max": 100},
+    "modifiers": [
+      {"id": "FT-09-M1", "description": "상대 차량이 정차해 있지 않고 움직이던 경우", "bound": "min", "adjustment": -20}
+    ]
+  },
+  {
+    "id": "FT-10", "accident_type": "앞차 추돌", "customer_role": "가해",
+    "aliases": ["앞차를 들이받음", "앞차를 추돌", "내가 뒤에서 받음"],
+    "description": "고객 차량이 앞서 가던 상대 차량을 뒤에서 들이받은 경우",
+    "customer_fault": {"min": 90, "max": 100},
+    "modifiers": [
+      {"id": "FT-10-M1", "description": "앞차가 이유 없이 급정거한 경우", "bound": "min", "adjustment": -20}
+    ]
+  },
+  {
+    "id": "FT-11", "accident_type": "주차 차량 접촉", "customer_role": "가해",
+    "aliases": ["주차된 차량 접촉", "주차된 차를 긁음", "주차된 차를 박음", "세워진 차를 긁음"],
+    "description": "주차해 서 있던(움직이지 않던) 상대 차량을 고객 차량이 긁거나 부딪힌 경우",
+    "customer_fault": {"min": 100, "max": 100},
+    "modifiers": [
+      {"id": "FT-11-M1", "description": "상대 차량이 주차 금지 장소(통로·모퉁이 등)에 세워져 있던 경우", "bound": "min", "adjustment": -10}
+    ]
+  },
+  {
+    "id": "FT-12", "accident_type": "주차 중 피해", "customer_role": "피해",
+    "aliases": ["주차된 내 차를 긁고 감", "주차 중 긁힘", "세워 둔 내 차가 긁힘", "주차해 둔 차가 받힘"],
+    "description": "고객 차량이 주차해 서 있던(움직이지 않던) 중 상대 차량이 와서 긁거나 부딪힌 경우",
+    "customer_fault": {"min": 0, "max": 0},
+    "modifiers": [
+      {"id": "FT-12-M1", "description": "고객 차량이 주차 금지 장소(통로·모퉁이 등)에 세워져 있던 경우", "bound": "max", "adjustment": 10}
+    ]
+  },
+  {
+    "id": "FT-13", "accident_type": "동시 차로변경", "customer_role": "쌍방",
+    "aliases": ["서로 차로변경", "둘 다 차로변경", "동시 차선변경", "서로 끼어들다 접촉"],
+    "description": "고객 차량과 상대 차량이 같은 차로로 동시에 차로를 바꾸다 접촉한 경우",
+    "customer_fault": {"min": 40, "max": 60},
+    "modifiers": [
+      {"id": "FT-13-M1", "description": "고객 차량이 방향지시등을 켜지 않은 경우", "bound": "max", "adjustment": 10},
+      {"id": "FT-13-M2", "description": "상대 차량이 방향지시등을 켜지 않은 경우", "bound": "min", "adjustment": -10}
+    ]
+  }
+]

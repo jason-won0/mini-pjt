@@ -1,0 +1,15 @@
+{
+  "vehicle_damage": {
+    "minor": {"min": 500000, "max": 1500000},
+    "moderate": {"min": 1500000, "max": 5000000},
+    "severe": {"min": 5000000, "max": 20000000}
+  },
+  "bodily_fixed": {
+    "minor": {"min": 500000, "max": 3000000},
+    "severe": {"min": 5000000, "max": 30000000}
+  },
+  "opponent_limits": {
+    "대물": 200000000,
+    "대인": 150000000
+  }
+}
